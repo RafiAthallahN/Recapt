@@ -31,7 +31,7 @@
     </header>
 
     <!-- Main Content Area -->
-    <main class="lg:pl-64 min-h-screen pb-24 lg:pb-12 pt-4 lg:pt-8 px-4 sm:px-6 lg:px-8">
+    <main class="lg:pl-64 min-h-screen pb-28 lg:pb-12 pt-4 lg:pt-8 px-4 sm:px-6 lg:px-8">
       <div class="max-w-5xl mx-auto">
         <slot />
       </div>

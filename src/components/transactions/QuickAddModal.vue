@@ -6,7 +6,7 @@
       @click.self="close"
     >
       <div
-        class="w-full max-w-lg bg-white dark:bg-slate-900 rounded-t-3xl lg:rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl p-6 space-y-5 animate-in slide-in-from-bottom-6 lg:slide-in-from-bottom-2 duration-200"
+        class="w-full max-w-lg bg-white dark:bg-slate-900 rounded-t-3xl lg:rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl p-5 sm:p-6 space-y-4 sm:space-y-5 animate-in slide-in-from-bottom-6 lg:slide-in-from-bottom-2 duration-200 max-h-[88vh] overflow-y-auto"
       >
         <!-- Header -->
         <div class="flex items-center justify-between">
@@ -25,31 +25,31 @@
             <button
               type="button"
               @click="type = 'outcome'"
-              class="py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center space-x-1.5 transition-all"
+              class="py-2 px-2 sm:px-3 rounded-lg text-xs font-semibold flex items-center justify-center space-x-1 sm:space-x-1.5 transition-all"
               :class="type === 'outcome' ? 'bg-rose-500 text-white shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'"
             >
-              <ArrowDownRight class="w-4 h-4" />
-              <span>Pengeluaran</span>
+              <ArrowDownRight class="w-4 h-4 shrink-0" />
+              <span class="truncate">Pengeluaran</span>
             </button>
 
             <button
               type="button"
               @click="type = 'income'"
-              class="py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center space-x-1.5 transition-all"
+              class="py-2 px-2 sm:px-3 rounded-lg text-xs font-semibold flex items-center justify-center space-x-1 sm:space-x-1.5 transition-all"
               :class="type === 'income' ? 'bg-emerald-500 text-white shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'"
             >
-              <ArrowUpRight class="w-4 h-4" />
-              <span>Pemasukan</span>
+              <ArrowUpRight class="w-4 h-4 shrink-0" />
+              <span class="truncate">Pemasukan</span>
             </button>
 
             <button
               type="button"
               @click="type = 'saving'"
-              class="py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center space-x-1.5 transition-all"
+              class="py-2 px-2 sm:px-3 rounded-lg text-xs font-semibold flex items-center justify-center space-x-1 sm:space-x-1.5 transition-all"
               :class="type === 'saving' ? 'bg-blue-500 text-white shadow-sm' : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'"
             >
-              <PiggyBank class="w-4 h-4" />
-              <span>Tabungan</span>
+              <PiggyBank class="w-4 h-4 shrink-0" />
+              <span class="truncate">Tabungan</span>
             </button>
           </div>
 
@@ -71,7 +71,7 @@
             </div>
 
             <!-- Quick Amount Modifiers -->
-            <div class="flex items-center space-x-2 mt-2">
+            <div class="flex flex-wrap items-center gap-1.5 mt-2">
               <button
                 type="button"
                 @click="appendZeros(1000)"

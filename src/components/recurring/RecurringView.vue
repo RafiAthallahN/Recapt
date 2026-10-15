@@ -70,7 +70,7 @@
     <!-- Add Modal -->
     <Teleport to="body">
       <div v-if="showAddModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/60 backdrop-blur-xs" @click.self="showAddModal = false">
-        <div class="w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 space-y-4">
+        <div class="w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 space-y-4 max-h-[88vh] overflow-y-auto">
           <div class="flex items-center justify-between">
             <h3 class="font-bold text-slate-900 dark:text-white text-base">Tambah Tagihan Rutin</h3>
             <button @click="showAddModal = false" class="text-slate-400 hover:text-slate-600 dark:hover:text-white">

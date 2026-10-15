@@ -47,7 +47,7 @@
 
       <button
         @click="$emit('delete', transaction.id)"
-        class="opacity-0 group-hover:opacity-100 p-1.5 rounded-lg text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+        class="opacity-60 sm:opacity-0 sm:group-hover:opacity-100 p-1.5 rounded-lg text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all active:scale-90"
         title="Hapus Transaksi"
       >
         <Trash2 class="w-4 h-4" />

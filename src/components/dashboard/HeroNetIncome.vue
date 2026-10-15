@@ -15,8 +15,9 @@
       <!-- Main Net Amount -->
       <div class="flex items-baseline space-x-2">
         <h1
-          class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight"
+          class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight truncate"
           :class="netIncome >= 0 ? 'text-white' : 'text-rose-400'"
+          :title="formatIDR(netIncome)"
         >
           {{ formatIDR(netIncome) }}
         </h1>
@@ -24,36 +25,36 @@
     </div>
 
     <!-- Breakdown Stats Row -->
-    <div class="relative z-10 grid grid-cols-3 gap-2.5 pt-2 border-t border-slate-800/80">
+    <div class="relative z-10 grid grid-cols-3 gap-1.5 sm:gap-2.5 pt-2 border-t border-slate-800/80">
       <!-- Income Badge -->
-      <div class="p-3 rounded-2xl bg-slate-800/60 border border-slate-700/40 space-y-1">
-        <div class="flex items-center space-x-1.5 text-emerald-400 text-xs font-medium">
-          <ArrowUpRight class="w-3.5 h-3.5" />
-          <span>Pemasukan</span>
+      <div class="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-slate-800/60 border border-slate-700/40 space-y-0.5 sm:space-y-1 min-w-0">
+        <div class="flex items-center space-x-1 sm:space-x-1.5 text-emerald-400 text-[11px] sm:text-xs font-medium">
+          <ArrowUpRight class="w-3.5 h-3.5 shrink-0" />
+          <span class="truncate">Pemasukan</span>
         </div>
-        <p class="text-sm sm:text-base font-bold text-white tracking-tight truncate">
+        <p class="text-xs sm:text-sm lg:text-base font-bold text-white tracking-tight truncate" :title="formatIDR(totalIncome)">
           {{ formatIDR(totalIncome) }}
         </p>
       </div>
 
       <!-- Outcome Badge -->
-      <div class="p-3 rounded-2xl bg-slate-800/60 border border-slate-700/40 space-y-1">
-        <div class="flex items-center space-x-1.5 text-rose-400 text-xs font-medium">
-          <ArrowDownRight class="w-3.5 h-3.5" />
-          <span>Pengeluaran</span>
+      <div class="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-slate-800/60 border border-slate-700/40 space-y-0.5 sm:space-y-1 min-w-0">
+        <div class="flex items-center space-x-1 sm:space-x-1.5 text-rose-400 text-[11px] sm:text-xs font-medium">
+          <ArrowDownRight class="w-3.5 h-3.5 shrink-0" />
+          <span class="truncate">Pengeluaran</span>
         </div>
-        <p class="text-sm sm:text-base font-bold text-white tracking-tight truncate">
+        <p class="text-xs sm:text-sm lg:text-base font-bold text-white tracking-tight truncate" :title="formatIDR(totalOutcome)">
           {{ formatIDR(totalOutcome) }}
         </p>
       </div>
 
       <!-- Saving Badge -->
-      <div class="p-3 rounded-2xl bg-slate-800/60 border border-slate-700/40 space-y-1">
-        <div class="flex items-center space-x-1.5 text-blue-400 text-xs font-medium">
-          <PiggyBank class="w-3.5 h-3.5" />
-          <span>Tabungan</span>
+      <div class="p-2 sm:p-3 rounded-xl sm:rounded-2xl bg-slate-800/60 border border-slate-700/40 space-y-0.5 sm:space-y-1 min-w-0">
+        <div class="flex items-center space-x-1 sm:space-x-1.5 text-blue-400 text-[11px] sm:text-xs font-medium">
+          <PiggyBank class="w-3.5 h-3.5 shrink-0" />
+          <span class="truncate">Tabungan</span>
         </div>
-        <p class="text-sm sm:text-base font-bold text-white tracking-tight truncate">
+        <p class="text-xs sm:text-sm lg:text-base font-bold text-white tracking-tight truncate" :title="formatIDR(totalSaving)">
           {{ formatIDR(totalSaving) }}
         </p>
       </div>

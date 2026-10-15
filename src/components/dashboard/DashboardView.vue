@@ -9,7 +9,7 @@
 
       <button
         @click="$emit('openQuickAdd')"
-        class="inline-flex items-center justify-center space-x-2 py-2.5 px-4 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold text-sm shadow-sm hover:opacity-95 active:scale-[0.98] transition-all"
+        class="hidden sm:inline-flex items-center justify-center space-x-2 py-2.5 px-4 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold text-sm shadow-sm hover:opacity-95 active:scale-[0.98] transition-all"
       >
         <Plus class="w-4 h-4 stroke-[2.5]" />
         <span>Catat Transaksi</span>
