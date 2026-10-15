@@ -762,5 +762,5 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/late
 
 ## License and Author
 
-Created and maintained by **Rafia** ([@rafia9005](https://github.com/rafia9005)).  
+Created and maintained by **RafiAthallahN** ([@RafiAthallahN](https://github.com/RafiAthallahN)).  
 Licensed under the [MIT License](LICENSE).
